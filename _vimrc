@@ -63,6 +63,7 @@ syntax on			"打开语法高亮
 set autoindent		"自动缩进
 set cindent			"C缩进
 set tabstop=4		"Tab键的宽度
+set shiftwidth=4	"自动换行的缩进
 set backspace=2		"退格键
 set mouse=a			"打开鼠标
 :colorscheme desert "颜色设置
