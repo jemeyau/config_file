@@ -25,7 +25,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " The following are examples of different formats supported.
 
-" Pwoerline
+"""""""""""""""""""""""""" Pwoerline
 Plugin 'Lokaltog/vim-powerline'
 
 set laststatus=2
@@ -33,6 +33,17 @@ set t_Co=256
 let g:Powerline_symbols='fancy'
 let Powerline_symbols='compatible'
 "set encoding=utf8
+
+"""""""""""""""""""""""" taglist
+Plugin 'vim-scripts/taglist.vim'
+let Tlist_Show_One_File = 0
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_File_Fold_Auto_Close = 1
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Close_On_Select = 1
+nnoremap <F12> :TlistToggle<CR>
+"map <silent><leader>tl :TlistToggle<CR>
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,8 +74,7 @@ syntax on			"打开语法高亮
 set autoindent		"自动缩进
 set cindent			"C缩进
 set tabstop=4		"Tab键的宽度
-set shiftwidth=4	"自动换行的缩进
-set backspace=2		"退格键
+set shiftwidth=4
 set mouse=a			"打开鼠标
 :colorscheme desert "颜色设置
 if(has("gui_running"))
@@ -73,3 +83,17 @@ if(has("gui_running"))
 "	set guifontwide=STHeiti\ 14
 endif
 set mousemodel=popup 
+
+
+
+
+
+
+"""""""""""""""""""""""""""""""""""""""
+" tags
+"
+"
+"
+
+set tags=tags;
+set tags+=~/nginx-1.7.4/tags;
