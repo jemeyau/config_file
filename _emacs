@@ -14,3 +14,7 @@
 
 ;; auto close bracket insertion. New in emacs 24
 (electric-pair-mode 1)
+
+;;auto indent
+(add-hook 'lisp-mode-hook '(lambda ()
+  (local-set-key (kbd "RET") 'newline-and-indent)))
